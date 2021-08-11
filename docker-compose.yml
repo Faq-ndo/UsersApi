@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: usersApi-db
+    environment:
+      MYSQL_DATABASE: UsersApiDB
+      MYSQL_USER: UsersApi
+      MYSQL_PASSWORD: toor1234
+      MYSQL_ROOT_PASSWORD: toor1234
+
+    ports:
+      - "3306:3306"
+
+    restart: always
